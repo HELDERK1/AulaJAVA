@@ -2,7 +2,7 @@ package aula07atividade2;
 
 import java.util.Scanner;
 
-public class atividade2 {
+public class Aula07Atividade2 {
 
     public static void main(String[] args) {
         double raio;

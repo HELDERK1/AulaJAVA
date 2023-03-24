@@ -16,8 +16,8 @@ public class Aula10atividade09 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int i = 0, horas, minutos;
-        double massaInicial, massaFinal, temp;
+        int  horas, minutos;
+        double i = 0.00, massaInicial, massaFinal, temp;
         Scanner entrada = new Scanner(System.in);
 
         System.out.printf("Digite a massa inicial do material: ");

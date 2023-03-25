@@ -8,15 +8,37 @@ public class Aula11atividade02 {
         int matrizSoma[][] = new int[2][2];
         int matrizMultiplicacao[][] = new int[2][2];
 
+        //soma
         for (int i = 0; i < matrizA.length; i++) {
             for (int j = 0; j < matrizA.length; j++) {
                 matrizSoma[i][j] = matrizA[i][j] + matrizB[i][j];
-                System.out.printf("Posicao [%d, %d]  matrizSoma = %d\n", i, j, matrizSoma[i][j]);
-                matrizMultiplicacao[i][j] = matrizA[i][j] * matrizB[i][j];
-                System.out.printf("Posicao [%d, %d]  matrizMultiplicacao = %d\n", i, j, matrizMultiplicacao[i][j]);
+            }
+        }
+
+        //multiplicação
+        for (int i = 0; i < matrizA.length; i++) {
+            for (int j = 0; j < matrizB[i].length; j++) {
+                for (int k = 0; k < 2; k++) {
+                    matrizMultiplicacao[i][j] += matrizA[i][k] * matrizB[k][j];
+                }
+            }
+        }
+
+        //imprimir soma
+        for (int i = 0; i < matrizSoma.length; i++) {
+            System.out.println("\n");
+            for (int j = 0; j < matrizSoma.length; j++) {
+                System.out.print(matrizSoma[i][j] + "\t");
+            }
+        }
+
+        //imprimir multiplicação
+        for (int i = 0; i < matrizMultiplicacao.length; i++) {
+            System.out.println("\n");
+            for (int j = 0; j < matrizMultiplicacao.length; j++) {
+                System.out.print(matrizMultiplicacao[i][j] + "\t");
             }
         }
     }
 
 }
-
